@@ -9,13 +9,14 @@ document.body.addEventListener('click',(e)=>{
     }
 })
 //
+console.log(Items)
 function MostrarCat(clase){
-    Items.forEach(item=>{
-        if(item.classList.contains(clase) || clase=='todo'){
-            item.classList.remove('d-none')
+    Items.forEach(({classList: c})=>{
+        if(c.contains(clase) || clase=='todo'){
+            c.remove('d-none')
         }
         else{
-            item.classList.add('d-none')
+            c.add('d-none')
         }
      })
 }
