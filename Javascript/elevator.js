@@ -1,0 +1,11 @@
+onscroll=()=>{
+    if(document.documentElement.scrollTop>200){
+        document.querySelector('.go-top').classList.add('show')
+    }
+    else{
+        document.querySelector('.go-top').classList.remove('show')
+    }
+}
+document.querySelector('.go-top').addEventListener('click',()=>{
+    document.documentElement.scrollTop=0
+})

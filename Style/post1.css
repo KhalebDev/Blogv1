@@ -1,0 +1,102 @@
+html {
+  scroll-behavior: smooth;
+ /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+ para probar la diferencia con y sin scroll suavizado*/
+}
+.nav{
+    background-color: #181b1b;
+    border-bottom: 1px solid #636e72;
+    font-family: 'Rajdhani', sans-serif;
+  }
+.item-nav{
+    border-bottom: 1px solid transparent;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+.item-nav:hover{
+    border-bottom: 1px solid white;
+ }
+h1,p{
+    font-family: 'Rajdhani', sans-serif;
+}
+/* footer */
+.social{
+    background-color: #181b1b;
+    height: 130px;
+    z-index: 100;
+    position: relative;
+   padding-top: 20px;
+  }
+  .social .content{
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .content i{
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .corpus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .corpus p{
+    color:  white;
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    
+  }
+  /* ELEVATOR */
+  .go-top{
+    background-color: #181b1b;
+    position: absolute;
+    left: 85%;
+    cursor: pointer;
+    display: none;
+    transition: .5s;
+    z-index: 200;
+  }
+  .go-top .go-top-btn{
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    transition: .5s;
+    height: 50px;
+    top: 90%;
+    background-color:#273c75;
+    
+  } 
+  .go-top .go-top-btn i{
+    color:white;
+    position: absolute;
+    font-size: 20px;
+    top: 30%;
+    left: 34%;
+    transform: rotate(180deg);
+    transition: .5s;
+  }
+  .show{
+    display: block;
+    animation-name: smoke;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    
+  }
+  .show .go-top{
+  }
+/* share */
+.share-items  i{
+  font-size: 25px;
+  cursor: pointer;
+  color:#40739e;
+}
